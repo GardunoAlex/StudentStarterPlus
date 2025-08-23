@@ -53,7 +53,7 @@ export const useOrganizationCodes = () => {
         code,
         organizationName,
         email,
-        password // Pass the password to the service
+        // password // Pass the password to the service - part of the problem lmao, need to get rid of the 
       );
 
       // Then create the auth user with organization metadata
