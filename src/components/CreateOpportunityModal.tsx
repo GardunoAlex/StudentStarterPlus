@@ -6,7 +6,11 @@ import { getOrganizationByCode, getOrganizationCodes } from '../services/organiz
 import { useAuth } from '../hooks/useAuth';
 import { getProfile } from '../services/profiles';
 import Cropper from 'react-easy-crop';
-import { Area } from 'react-easy-crop/types';
+
+
+
+
+// import { Area } from 'react-easy-crop/types'; MIGHT NEED THIS LATER. 
 
 interface CreateOpportunityModalProps {
   isOpen: boolean;
@@ -339,6 +343,8 @@ const CreateOpportunityModal: React.FC<CreateOpportunityModalProps> = ({
       // Use the onSubmit prop if provided
       if (onSubmit) {
         await onSubmit(submissionData);
+        
+        // I wonder if this is where I have to fetch the opportunities again. 
       }
       
       // Close modal and reset form
