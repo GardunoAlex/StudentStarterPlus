@@ -167,6 +167,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage, onCreateOp
         }
       }
     }
+    // I think this is where we have to fetch the user profile again. There is a useEffect at the top of the file, but I'm not sure how to call it here. 
   };
 
   // Close dropdown when clicking outside
