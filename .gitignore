@@ -140,3 +140,5 @@ emailjs-config.js
 # Test files with credentials
 check-*.js
 test-*.js
+
+# adding to add
